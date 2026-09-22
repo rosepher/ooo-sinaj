@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ООО «Компания» — разработка, дизайн и digital-решения для бизнеса.">
+    <title>ООО «Компания» — Digital-решения для бизнеса</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <i class="fas fa-cube"></i> Компания
+            </a>
+            <nav>
+                <a href="#about">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#projects">Проекты</a>
+                <a href="#team">Команда</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary nav-cta">Связаться</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <h1>Создаём digital-продукты,<br>которые работают на бизнес</h1>
+            <p class="hero-sub">
+                Разработка сайтов, мобильных приложений и дизайн интерфейсов.
+                Более 120 реализованных проектов с 2015 года.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+                <a href="#projects" class="btn btn-outline">Портфолио</a>
+            </div>
+            <div class="hero-stats">
+                <div><strong>10+</strong><span>лет на рынке</span></div>
+                <div><strong>120+</strong><span>проектов</span></div>
+                <div><strong>40+</strong><span>специалистов</span></div>
+                <div><strong>98%</strong><span>довольных клиентов</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">О компании</h2>
+            <p class="section-lead">
+                Мы — команда инженеров, дизайнеров и менеджеров, которая помогает
+                бизнесу расти через технологии. Работаем с компаниями от стартапов
+                до крупного enterprise.
+            </p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Быстрый старт</h3>
+                    <p>Запускаем MVP за 4–6 недель без потери качества.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Гарантия</h3>
+                    <p>Поддерживаем продукт 12 месяцев после релиза.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Выделенная команда</h3>
+                    <p>Проектный менеджер, дизайнер и разработчики.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Прозрачность</h3>
+                    <p>Еженедельные отчёты и демо промежуточных версий.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Веб-разработка</h3>
+                    <p>Корпоративные сайты, интернет-магазины, веб-сервисы и личные кабинеты.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Мобильные приложения</h3>
+                    <p>iOS и Android приложения на React Native и Flutter.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX дизайн</h3>
+                    <p>Прототипы, дизайн-системы, редизайн существующих интерфейсов.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Автоматизация</h3>
+                    <p>Интеграции, CRM, внутренние сервисы и бизнес-процессы.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>DevOps и облака</h3>
+                    <p>Настройка CI/CD, инфраструктура в AWS, GCP и Yandex Cloud.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Поддержка</h3>
+                    <p>Техническая поддержка и развитие проектов после релиза.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Избранные проекты</h2>
+            <div class="projects-grid">
+                <a href="#" class="project">
+                    <div class="project-img" style="background: linear-gradient(135deg,#58a6ff,#1f6feb);"></div>
+                    <div class="project-body">
+                        <h3>FinTech Dashboard</h3>
+                        <p>Личный кабинет для финтех-стартапа. React, TypeScript, Node.js.</p>
+                        <span class="tag">Веб-сервис</span>
+                    </div>
+                </a>
+                <a href="#" class="project">
+                    <div class="project-img" style="background: linear-gradient(135deg,#a371f7,#6f42c1);"></div>
+                    <div class="project-body">
+                        <h3>Marketplace App</h3>
+                        <p>Мобильное приложение для маркетплейса. React Native, Firebase.</p>
+                        <span class="tag">Мобильное</span>
+                    </div>
+                </a>
+                <a href="#" class="project">
+                    <div class="project-img" style="background: linear-gradient(135deg,#3fb950,#238636);"></div>
+                    <div class="project-body">
+                        <h3>E-commerce Platform</h3>
+                        <p>Интернет-магазин с 50 000 SKU. Next.js, PostgreSQL.</p>
+                        <span class="tag">E-commerce</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда -->
+    <section id="team" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Команда</h2>
+            <div class="team-grid">
+                <div class="member">
+                    <img src="https://via.placeholder.com/120" alt="CEO">
+                    <h3>Алексей Петров</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="member">
+                    <img src="https://via.placeholder.com/120" alt="CTO">
+                    <h3>Мария Смирнова</h3>
+                    <p>CTO</p>
+                </div>
+                <div class="member">
+                    <img src="https://via.placeholder.com/120" alt="Design Lead">
+                    <h3>Иван Кузнецов</h3>
+                    <p>Design Lead</p>
+                </div>
+                <div class="member">
+                    <img src="https://via.placeholder.com/120" alt="PM">
+                    <h3>Ольга Иванова</h3>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section">
+        <div class="container contact-wrap">
+            <div class="contact-info">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-lead">
+                    Расскажите о задаче — ответим в течение рабочего дня и предложим решение.
+                </p>
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 10, офис 25</li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:hello@company.ru">hello@company.ru</a></li>
+                    <li><i class="fab fa-telegram"></i> <a href="https://t.me/company">@company</a></li>
+                </ul>
+            </div>
+            <form class="contact-form" onsubmit="return handleSubmit(event)">
+                <label>
+                    Имя
+                    <input type="text" name="name" required placeholder="Ваше имя">
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required placeholder="you@example.com">
+                </label>
+                <label>
+                    Сообщение
+                    <textarea name="message" rows="4" required placeholder="Опишите задачу"></textarea>
+                </label>
+                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой обработки данных.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <a href="#" class="logo"><i class="fas fa-cube"></i> Компания</a>
+                <p class="footer-text">Digital-решения для бизнеса с 2015 года.</p>
+            </div>
+            <div>
+                <h4>Навигация</h4>
+                <a href="#about">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            <div>
+                <h4>Мы в сети</h4>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            © <span id="year"></span> ООО «Компания». Все права защищены.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
