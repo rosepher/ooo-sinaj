@@ -1,7 +1,7 @@
-// Актуальный год
+// Актуальный год в подвале
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Обработка формы (заглушка — для реальной отправки используйте Formspree, Getform и т.п.)
+// Обработка формы (заглушка — для реальной отправки подключите Formspree/Getform)
 function handleSubmit(event) {
     event.preventDefault();
     const form = event.target;
@@ -12,23 +12,20 @@ function handleSubmit(event) {
     return false;
 }
 
-// Плавное появление секций
+// Плавное появление блоков при скролле
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible');
     });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.feature, .service-card, .project, .member').forEach(el => {
+document.querySelectorAll('.feature, .service-card').forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(24px)';
+    el.style.transform = 'translateY(20px)';
     el.style.transition = 'all 0.6s ease';
     observer.observe(el);
 });
 
-// Добавляем класс видимости
 const style = document.createElement('style');
 style.textContent = `.visible { opacity: 1 !important; transform: translateY(0) !important; }`;
 document.head.appendChild(style);
